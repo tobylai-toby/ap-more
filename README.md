@@ -1,4 +1,4 @@
-# AP-dpy
+# AP-More
 > ⚠ 使用前须知！
 >
 > 这不是一个由[box3lab神岛实验室](https://box3lab.com)官方发布的项目
@@ -11,22 +11,28 @@
 
 > **如果使用本项目进行游戏开发，带来的后果作者不承担责任，本项目应该被视为整活项目**
 
+本插件支持*Python*或者*JavaScript*与ArenaPro集成开发。
 
+> 忠告：还是乖乖学TypeScript吧，别的东西都不是ArenaPro官方支持的。
+
+# 以下部分是Python部分的教学
 将`Python`集成到[神岛ArenaPro](https://www.yuque.com/box3lab/doc/fi2z90g00qp2hwac)的项目里！
 （arenapro+daopy=啥？不知道，反正daopy的1m体积够神岛编辑器喝一壶的）
 
 ## 使用
-### 创建Ap-dpy项目
+### 创建Ap-More项目(Python)
 在ArenaPro上使用Python需要一定修改，所以这样的项目要通过本插件创建。
 
 打开一个空的文件夹
 
 按下<kbd>Ctrl-Shift-P</kbd> 打开命令面板，输入并找到：
 ```
-Ap-dpy: 创建 AP-dpy 项目
+Ap-more: 创建 AP-more 项目
 ```
+选择`Skulpt.js`来运行Python
+
 请等待一切执行完成，查看终端提示。
-### 编写Ap-dpy代码
+### 编写Ap-more(Python)代码
 找到`client/src/daopy-client/index.py` 和 `server/src/daopy-server/index.py`，它们分别是`client端`和`server端`的入口文件
 ```python
 # 假设这是server端
@@ -95,4 +101,5 @@ world.onPlayerJoin(onPlayerJoin) # 注册事件
 - [神岛实验室](https://box3lab.com)
 - [岛研所(非官方)](https://github.com/Box3TRC)
 - [Skulpt.js](https://github.com/skulpt/skulpt)
+- [MicroPython](https://micropython.org)
 - 图标部分使用了 [Python 的图标 Icons8](https://icons8.com/icon/12584/python)

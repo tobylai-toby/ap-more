@@ -1,5 +1,8 @@
 # 更新记录
 
+## 3.0.2
+- ap-dpy 更名 ap-more 包名不变，图标目前懒得改。
+
 ## 3.0.1
 - 跟进ArenaPro版本，原本的ArenaPro构建上传命令被从xxx.upload改为了xxx.buildNUpload，故不更新此扩展将无法使用。
 - 添加了`JavaScript`的实验性支持(去学ts吧~arenapro原本的ts~)，迟一点说不定扩展就改名了

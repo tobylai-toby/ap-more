@@ -61,7 +61,7 @@ function activate(context) {
 			"[Python3](beta) MicroPython(Wasm实现[速度缓慢;Server端;存在bug见插件介绍;Client端会继续使用Skulpt.js])",
 			"[JavaScript](beta) Esbuild打包js后嵌入arenapro(ts) 但是为什么不去学TypeScript呢？"
 		]
-		let implement = await vscode.window.showQuickPick(implements_select, { placeHolder: "请选择解释器：", canPickMany: false });
+		let implement = await vscode.window.showQuickPick(implements_select, { placeHolder: "请选择运行时：", canPickMany: false });
 		if (!implement) return;
 		// implement=implement[0];
 		if (Array.isArray(implement)) implement = implement[0];
@@ -73,7 +73,7 @@ function activate(context) {
 			return;
 		}
 		console.log(`implement selected: ${implement}`);
-		vscode.window.showInformationMessage("正在复制ap-dpy模板……");
+		vscode.window.showInformationMessage("正在复制ap-more模板……");
 
 		if (!nobaseTpls.includes(implement)) {
 			// copy ext/project-template/base to folder
@@ -98,7 +98,7 @@ function activate(context) {
 		}
 
 		vscode.window.showInformationMessage("正在运行项目初始化...等待终端运行结束即可");
-		let term = await vscode.window.createTerminal({ name: "ap-dpy: init", cwd: folder.uri });
+		let term = await vscode.window.createTerminal({ name: "ap-more: init", cwd: folder.uri });
 		term.show(false);
 		term.sendText("npm install --registry=https://mirrors.huaweicloud.com/repository/npm/");
 		term.sendText("npm run check-daopy");

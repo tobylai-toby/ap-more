@@ -1,9 +1,9 @@
 {
   "name": "arena-pro-ext-daopy",
-  "displayName": "AP-dpy",
-  "description": "在岛三上与ArenaPro集成使用Python编程！arenapro + daopy=?",
+  "displayName": "AP-More",
+  "description": "在岛三上与ArenaPro集成使用Python/JavaScript编程！arenapro + daopy/js=瞎折腾",
   "publisher": "tobylai",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "engines": {
     "vscode": "^1.65.0"
   },
@@ -13,19 +13,23 @@
   ],
   "activationEvents": [],
   "main": "./extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobylai-toby/ap-more"
+  },
   "contributes": {
     "commands": [
       {
         "command": "arena-pro-ext-daopy.create-project",
-        "title": "AP-dpy: 创建 AP-dpy 项目"
+        "title": "ap-more: 创建 ap-more 项目(选择运行时py/js/..)"
       },
       {
         "command": "arena-pro-ext-daopy.prebuild-project",
-        "title": "AP-dpy: 预构建 AP-dpy 项目"
+        "title": "ap-more: 预构建 ap-more 项目"
       },
       {
         "command": "arena-pro-ext-daopy.deploy-project",
-        "title": "AP-dpy: 预构建+构建+上传 AP-dpy 项目（推荐）"
+        "title": "ap-more: 预构建+构建+上传 ap-more 项目（推荐）"
       }
     ]
   },
