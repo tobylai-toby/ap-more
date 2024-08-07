@@ -1,0 +1,23 @@
+{
+  "name": "ap-js-project-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check-daopy": "node check-daopy.js",
+    "prebuild": "esbuild ./client/src/js/index.js --bundle --minify --outfile=client/dist/src/_js_bundle.js && esbuild ./server/src/js/index.js --bundle --minify --outfile=server/dist/src/_js_bundle.js&& echo [prebuilt success]"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "acorn": "^8.12.1",
+    "terser-webpack-plugin": "^5.3.10",
+    "typescript": "^5.5.3",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  },"devDependencies": {
+    "esbuild":"^0.23.0"
+  }
+}

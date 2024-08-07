@@ -1,0 +1,51 @@
+{
+  "name": "arena-pro-ext-daopy",
+  "displayName": "AP-dpy",
+  "description": "在岛三上与ArenaPro集成使用Python编程！arenapro + daopy=?",
+  "publisher": "tobylai",
+  "version": "3.0.1",
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "icon": "./apdpy.png",
+  "categories": [
+    "Programming Languages","Education"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "arena-pro-ext-daopy.create-project",
+        "title": "AP-dpy: 创建 AP-dpy 项目"
+      },
+      {
+        "command": "arena-pro-ext-daopy.prebuild-project",
+        "title": "AP-dpy: 预构建 AP-dpy 项目"
+      },
+      {
+        "command": "arena-pro-ext-daopy.deploy-project",
+        "title": "AP-dpy: 预构建+构建+上传 AP-dpy 项目（推荐）"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.65.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "extensionDependencies": [
+    "box3lab.box3arenapro"
+  ],
+  "dependencies": {
+    "cross-spawn": "^7.0.3"
+  }
+}

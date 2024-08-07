@@ -1,0 +1,26 @@
+{
+    "ArenaPro": {
+        "file": {
+            "typescript": {
+                "server": {
+                    "base": "./server",
+                    "entry": "src/App.ts",
+                    "development": false
+                },
+                "client": {
+                    "base": "./client",
+                    "entry": "src/clientApp.ts",
+                    "development": false
+                }
+            },
+            "experimental": {
+                "allowNodeModules": true
+            }
+        },
+        "map": {
+            "id": "",
+            "editHash": "",
+            "playHash": ""
+        }
+    }
+}
