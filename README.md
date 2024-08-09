@@ -1,4 +1,7 @@
 # AP-More
+**(vscode插件)** 在岛三上与ArenaPro(TS)集成使用Python/JavaScript编程！arenapro + daopy/js [瞎折腾]
+
+[点此安装](https://marketplace.visualstudio.com/items?itemName=tobylai.arena-pro-ext-daopy)
 > ⚠ 使用前须知！
 >
 > 这不是一个由[box3lab神岛实验室](https://box3lab.com)官方发布的项目
