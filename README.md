@@ -105,4 +105,5 @@ world.onPlayerJoin(onPlayerJoin) # 注册事件
 - [岛研所(非官方)](https://github.com/Box3TRC)
 - [Skulpt.js](https://github.com/skulpt/skulpt)
 - [MicroPython](https://micropython.org)
+- [Esbuild](https://esbuild.github.io)
 - 图标部分使用了 [Python 的图标 Icons8](https://icons8.com/icon/12584/python)
